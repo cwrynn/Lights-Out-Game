@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(Lights_Out_tjsheeha_netid2)
+project(Lights_Out)
 set(CMAKE_CXX_STANDARD 17)
 
 ## ~ CONFIGURE DEPENDENCIES ~
@@ -112,6 +112,8 @@ add_executable(${PROJECT_NAME} ${PROJECT_SOURCES} ${PROJECT_HEADERS}
         src/engine.h
         src/main.cpp
         src/font/font.h
-        src/font/fontRenderer.cpp)
+        src/font/fontRenderer.cpp
+        src/engine.cpp
+        src/engine.h)
 # Include libraries
 target_link_libraries(${PROJECT_NAME} glfw glm freetype)
